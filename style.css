@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Arsenal SC", sans-serif;
+}
+#navbar{
+    display: flex;
+    width: 85%;
+    margin-left: 100px;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.listitem{
+    list-style: none;
+    display: inline; 
+    margin: 10px 20px; /* top and bottom */
+    font-weight: 700;
+    color: white;
+    font-size: larger;
+    
+}
+li a:hover{
+    color: black;
+
+}
+li a{  /* descendent selector */
+    text-decoration: none;
+    color:white;
+}
+#container{
+    position: fixed;
+    top: 0;
+    background-color: rgb(248, 58, 58);
+    width: 100%;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap:20px;
+    grid-row-gap:30px ;
+}
+.item img{
+    width: 100%;
+    height: 275px;
+    border-radius: 2px;
+    transition: 400ms;
+    cursor: pointer;
+    object-fit: cover;
+    align-content: center;
+    
+}
+.item img:hover{
+    filter: grayscale(1);
+    transform: scale(1.03);
+}
+section{
+    padding-left: 20%;
+    justify-content: center;
+    align-items: center;
+}
+.item h1{
+    padding: 5px;
+    text-align: center;
+}
+.item button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+#pic{
+    background-image:url('https://1000logos.net/wp-content/uploads/2017/08/Wendys-Logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+#pic h2{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+}
+    
+    
